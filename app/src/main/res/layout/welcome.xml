@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doodle"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d4e73350"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_welMessage"
+        android:text="@string/header_meetup_quiz"
+        android:layout_alignStart="@id/tv_welMessage"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_takeQuiz"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="By answering the 3 minutes quiz, you help us know you better"
+        android:id="@+id/tv_welMessage"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Take the qiuz"
+        android:textColor="#f3e73350"
+        android:background="@drawable/btn_round"
+        android:textAllCaps="false"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:onClick="welcome"
+        android:id="@+id/btn_takeQuiz"/>
+</RelativeLayout>
