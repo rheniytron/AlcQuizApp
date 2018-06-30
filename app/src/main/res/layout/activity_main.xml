@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".QuestionBox"
     android:background="#E73350">
 
     <ImageView
@@ -96,5 +96,12 @@
             android:layout_weight="1"
             android:visibility="invisible"
             android:id="@+id/v_q4"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:id="@+id/v_q5"/>
     </LinearLayout>
 </LinearLayout>

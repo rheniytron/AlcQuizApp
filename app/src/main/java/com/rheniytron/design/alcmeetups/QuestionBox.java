@@ -1,5 +1,6 @@
 package com.rheniytron.design.alcmeetups;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,12 +20,18 @@ public class QuestionBox extends AppCompatActivity {
         progressbar2 = (View) findViewById(R.id.v_q2);
         progressbar3 = (View) findViewById(R.id.v_q3);
         progressbar4 = (View) findViewById(R.id.v_q4);
+        progressbar5 = (View) findViewById(R.id.v_q5);
 
         nextQ();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
     TextView questionField;
-    View progressbar0,progressbar1,progressbar2,progressbar3,progressbar4;
+    View progressbar0,progressbar1,progressbar2,progressbar3,progressbar4,progressbar5;
 
     //increase the count on each question answered in the quiz
     int counter_Question = 0;
@@ -43,7 +50,6 @@ public class QuestionBox extends AppCompatActivity {
 
         nextQ();
         ansCheck(counter_Question,"yes");
-
     }
 
 
@@ -55,8 +61,9 @@ public class QuestionBox extends AppCompatActivity {
     //next question
     void nextQ(){
 
-        if (counter_Question >= 7)
-            return;
+        if (counter_Question >= 6){
+            startActivity( new Intent(this, Summary.class));
+            return;}
 
         questionField.setText(questions[0][counter_Question]);
 
@@ -72,6 +79,9 @@ public class QuestionBox extends AppCompatActivity {
                 break;
             case 4:
                 progressbar4.setVisibility(View.VISIBLE);
+                break;
+            case 5:
+                progressbar5.setVisibility(View.VISIBLE);
                 break;
         }
 
@@ -91,7 +101,7 @@ public class QuestionBox extends AppCompatActivity {
             questions[1][qtnNum] = "no";
 
         Log.d(questions[0][qtnNum].toString(),"qtn");
-//        Log.d(questions[qtnNum][0].toString(),"ans");
+        Log.d(questions[1][qtnNum].toString(),"ans");
     }
 
 

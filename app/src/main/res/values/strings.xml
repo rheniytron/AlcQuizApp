@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">AlcMeetUps</string>
     <string name="header_meetup_quiz">ALC-MeetUp 3 minutes \nmeetup Quiz</string>
+
+    <string name="qtn0">I am 40,  Am I too old to learn User Experience?</string>
+    <string name="qtn1">It will at least take me a year to learn User Experience</string>
+    <string name="qtn2">"Is learning User Experience necessary?</string>
+    <string name="qtn3">Learning User Experience will cost a lot of money</string>
+    <string name="qtn4">I do need a coding experience to learn User Experience</string>
+    <string name="qtn5">Is there a large community of User Interface/User Experience designers </string>
+    <string name="qtn6"> Do you like this app and it will give you a feedback</string>
 </resources>
