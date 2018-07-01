@@ -7,6 +7,27 @@
     <string name="qtn2">"Is learning User Experience necessary?</string>
     <string name="qtn3">Learning User Experience will cost a lot of money</string>
     <string name="qtn4">I do need a coding experience to learn User Experience</string>
-    <string name="qtn5">Is there a large community of User Interface/User Experience designers </string>
+    <string name="qtn5">Is there a community of User Interface/User Experience designers in Nigeria</string>
     <string name="qtn6"> Do you like this app and it will give you a feedback</string>
+
+    <string name="ans0">No, You’re never too old to become a UX Designer.If you want to become a UX designer and you don’t have a background in digital, don’t panic. The learning curve is steep, but it’s doable. Getting into UX design completely changed my life.</string>
+    <string name="ans1">No,I am 9 Months Old as a UX Designer .I love being in this UX design filded. I got my first UX job at Studio Flolab.I want to make useful things that can solve problem for many people out there</string>
+    <string name="ans2">yes, 7 Reasons Why You Should Get Into UX Design</string>
+    <string name="ans3">No, Learn UX design: 16 best paid and free UX design courses</string>
+    <string name="ans4">No, 5 Simple Steps to Land a Job as UX Designer with No Experience</string>
+    <string name="ans5">Yes, Whether you’re completely new to UX, or a professional in the field looking for tips, joining an online community is a great place to ask for possible solutions, stay on top of trends, and connect with others with a common interest! </string>
+
+    <string name="link0">https://medium.com/@marcandrew/youre-never-too-old-to-become-a-ux-designer-82300a4d1a2f</string>
+    <string name="link1">https://blog.usejournal.com/i-am-9-months-old-as-a-ux-designer-and-this-is-what-i-learn-638096fdb671?source=user_profile---------2-------------------</string>
+    <string name="link2">https://trydesignlab.com/blog/7-reasons-get-into-ux-design/</string>
+    <string name="link3">https://www.digitalartsonline.co.uk/features/creative-business/learn-ux-design-16-best-paid-free-ux-design-courses/</string>
+    <string name="link4">https://blog.prototypr.io/5-simple-steps-to-land-a-job-as-ux-designer-with-no-experience-3eb14eaad703?gi=f2f608292bce</string>
+    <string name="link5">https://usable.ng/</string>
+
+    <string name="writers0">-Marc Andrew</string>
+    <string name="writers1">-Nathania Callysta</string>
+    <string name="writers2">-Andrew Wilshere</string>
+    <string name="writers3">Digital Arts Staff </string>
+    <string name="writers4">-Trista liu</string>
+    <string name="writers5">-Usable.ng</string>
 </resources>

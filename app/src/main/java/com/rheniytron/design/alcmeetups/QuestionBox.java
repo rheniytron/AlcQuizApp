@@ -1,6 +1,8 @@
 package com.rheniytron.design.alcmeetups;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +30,15 @@ public class QuestionBox extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode ==1 ){
+                counter_Question = data.getIntExtra("result",10);
+            nextQ();
+                Log.d("results8 ",String.valueOf(counter_Question));
+
+        }
+
+        Log.d("results8 ", "I returned");
     }
 
     TextView questionField;
@@ -37,6 +48,7 @@ public class QuestionBox extends AppCompatActivity {
     int counter_Question = 0;
 
     //Stores the values of the answers in relating to the Quiz in 2d array
+    // && Store Users Answers
     String questions[][] = new String [][]{
 
             {"I am 40,  Am I too old to learn User Experience?",
@@ -48,8 +60,10 @@ public class QuestionBox extends AppCompatActivity {
 
     public void btn_yes(View view) {
 
+
         nextQ();
         ansCheck(counter_Question,"yes");
+
     }
 
 
@@ -61,8 +75,12 @@ public class QuestionBox extends AppCompatActivity {
     //next question
     void nextQ(){
 
-        if (counter_Question >= 6){
-            startActivity( new Intent(this, Summary.class));
+        if (counter_Question == 8){
+            Log.d("counter_Question","NEXTQ");
+            questionField.setText(questions[0][6]); return;}
+
+        if (counter_Question == 6){
+            startActivityForResult( new Intent(this, Summary.class),1);
             return;}
 
         questionField.setText(questions[0][counter_Question]);
@@ -93,6 +111,16 @@ public class QuestionBox extends AppCompatActivity {
     // @qtnNum to identify the corrent Question
     // @selected to get the Question selected answer
     private void ansCheck(int qtnNum, String selected) {
+
+        //qtnNum Equal 8 is used for Activity for result
+        if (qtnNum == 8) {
+            if (selected.equals("yes")){
+                sendEmail(new String[]{"rheniytron0270@gmail.com"},"Feedback on AlcMeetup 3 Minutes Quiz App");
+                Log.d("Email", "Feedback on AlcMeetup 3 Minutes App");
+            }
+            if (selected.equals("no"))
+                finish();
+            return;}
         if (qtnNum >= 7)
             return;
         if (selected.equals("yes"))
@@ -104,6 +132,15 @@ public class QuestionBox extends AppCompatActivity {
         Log.d(questions[1][qtnNum].toString(),"ans");
     }
 
+    public void sendEmail(String[] addresses, String subject) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 
 
 }

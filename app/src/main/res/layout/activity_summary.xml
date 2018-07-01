@@ -42,7 +42,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -51,14 +52,26 @@
                 android:text="@string/qtn0"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn0"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn0"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link0"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans0"
+                android:gravity="fill_horizontal"
                 android:id="@+id/tv_ans0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans0"
+                android:layout_alignEnd="@id/tv_ans0"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers0"
+                android:id="@+id/tv_writers0"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -90,7 +103,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -99,14 +113,26 @@
                 android:text="@string/qtn1"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn1"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn1"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link1"
+                android:gravity="fill_horizontal"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans1"
                 android:id="@+id/tv_ans1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans1"
+                android:layout_alignEnd="@id/tv_ans1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers1"
+                android:id="@+id/tv_writers1"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -138,7 +164,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -147,14 +174,26 @@
                 android:text="@string/qtn2"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn2"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn2"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link2"
+                android:gravity="fill_horizontal"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans2"
                 android:id="@+id/tv_ans2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans2"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers2"
+                android:id="@+id/tv_writers2"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -186,7 +225,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -195,14 +235,26 @@
                 android:text="@string/qtn3"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn3"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn3"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link3"
+                android:gravity="fill_horizontal"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans3"
                 android:id="@+id/tv_ans3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans3"
+                android:layout_alignEnd="@id/tv_ans3"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers3"
+                android:id="@+id/tv_writers3"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -234,7 +286,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -243,14 +296,26 @@
                 android:text="@string/qtn4"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn4"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn4"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link4"
+                android:gravity="fill_horizontal"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans4"
                 android:id="@+id/tv_ans4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans4"
+                android:layout_alignEnd="@id/tv_ans4"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers4"
+                android:id="@+id/tv_writers4"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -282,7 +347,8 @@
             android:layout_marginTop="1dp"
             android:paddingLeft="24dp"
             android:paddingTop="8dp"
-            android:paddingBottom="8dp">
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp">
 
             <TextView
                 android:layout_width="240dp"
@@ -291,14 +357,26 @@
                 android:text="@string/qtn5"
                 android:layout_marginTop="8dp"
                 android:id="@+id/tv_qtn5"/>
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_qtn5"
+                android:background="@android:color/transparent"
+                android:onClick="btn_link5"
+                android:gravity="fill_horizontal"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="@android:color/darker_gray"
-                android:text="Questio answer summary"
+                android:text="@string/ans0"
                 android:id="@+id/tv_ans5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ans5"
+                android:layout_alignEnd="@id/tv_ans5"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/writers5"
+                android:id="@+id/tv_writers5"/>
 
             <ImageView
                 android:layout_width="wrap_content"
